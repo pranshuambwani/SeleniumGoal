@@ -14,6 +14,7 @@ public class Ass5Q2 {
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		driver.get("https://www.toolsqa.com/automation-practice-form/");
 		driver.findElement(By.name("firstname")).sendKeys("Pranshu");
 		driver.findElement(By.id("lastname")).sendKeys("Ambwani");
